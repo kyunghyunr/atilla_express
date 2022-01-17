@@ -15,7 +15,14 @@
   width: 100%;
 }
 .header #mainLogo {
-  padding-top: 2px;
+  transition: 0.3s;
+}
+.header #mainLogo_link {
+  padding: 15px;
+}
+.header #mainLogo:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
 }
 .header nav {
   background: #000000;
@@ -28,6 +35,7 @@
   list-style: none;
 }
 .header nav li {
+  padding: 15px;
   display: inline-block;
   text-decoration: none;
 }
@@ -39,7 +47,24 @@
   color: #ffffff;
   font-size: 2rem;
   font-weight: bolder;
+  transition: 0.3s;
 }
-#main_picture {
+.header nav li .mainMenu_name:hover {
+  background-color: #00000000;
+  transition: 0.3s;
+}
+.main_image_layout_1 {
+  text-align: center;
+}
+.main_image_layout_1 #main_picture {
   width: 500px;
+  height: auto;
+  margin-top: 97px;
+}
+.music_layout_1 {
+  text-align: center;
+}
+.music_layout_1 #we_can_do {
+  margin-top: 97px;
+  justify-content: center;
 }

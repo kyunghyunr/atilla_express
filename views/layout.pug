@@ -1,26 +1,31 @@
 doctype html
-html(lang='en')
+html(class='no-js', lang='en')
 	head
 		title= title
 		meta(character='etf-8')
 		link(rel='stylesheet', href='/stylesheets/css/style.css')
+		link(rel='stylesheet', type='text/css', href='/stylesheets/csshake/docs/csshake.css')
 	body
 	Header.header
 		div
 			nav
-				a(href="/")
+				a.shake-slow#mainLogo_link(href="/")
 					img#mainLogo(src='/images/mainLogo_75x61.svg')
-			
 				ul.mainMenu
 					li
-						a.mainMenu_name(href="/SHOWS") SHOWS
+						div.shake
+							a.mainMenu_name(href="/SHOWS") SHOWS
 					li
-						a.mainMenu_name(href="/NEWS") NEWS
+						div.shake
+							a.mainMenu_name(href="/NEWS") NEWS
 					li
-						a.mainMenu_name(href="/MUSIC") MUSIC
+						div.shake
+							a.mainMenu_name(href="/MUSIC") MUSIC
 					li
-						a.mainMenu_name(href="/SHOP") SHOP
+						div.shake
+							a.mainMenu_name(href="/SHOP") SHOP
 					li
-						a.mainMenu_name(href="/CONTACT") CONTACT
+						div.shake
+							a.mainMenu_name(href="/CONTACT") CONTACT
 
 	block content

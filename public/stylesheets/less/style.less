@@ -1,3 +1,4 @@
+// Main_Layout
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -17,7 +18,16 @@
 	width: 100%;
 
 	#mainLogo {
-		padding-top: 2px;
+		//		padding-top: 2px;
+		transition: 0.3s;
+	}
+	#mainLogo_link {
+		padding: 15px;
+	}
+	#mainLogo:hover {
+		//		box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+		transform: scale(1.5);
+		transition: 0.3s;
 	}
 	nav {
 		background: #000000;
@@ -31,6 +41,7 @@
 		}
 
 		li {
+			padding: 15px;
 			display: inline-block;
 			text-decoration: none;
 
@@ -42,11 +53,35 @@
 				color: #ffffff;
 				font-size: 2rem;
 				font-weight: bolder;
+				transition: 0.3s;
+			}
+			.mainMenu_name:hover {
+				background-color: #00000000;
+				//				text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+				//				font-size: 3rem;
+				transition: 0.3s;
 			}
 		}
 	}
 }
 
-#main_picture {
-	width: 500px;
+// HOME_article
+.main_image_layout_1 {
+	text-align: center;
+
+	#main_picture {
+		width: 500px;
+		height: auto;
+		margin-top: 97px;
+	}
+}
+
+// MUSIC_article
+.music_layout_1 {
+	text-align: center;
+
+	#we_can_do {
+		margin-top: 97px;
+		justify-content: center;
+	}
 }
