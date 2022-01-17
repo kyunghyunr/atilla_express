@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+	head
+		title= title
+		meta(character='etf-8')
+		link(rel='stylesheet', href='/stylesheets/css/style.css')
+	body
+	Header.header
+		div
+			nav
+				a(href="/")
+					img#mainLogo(src='/images/mainLogo_75x61.svg')
+			
+				ul.mainMenu
+					li
+						a.mainMenu_name(href="/SHOWS") SHOWS
+					li
+						a.mainMenu_name(href="/NEWS") NEWS
+					li
+						a.mainMenu_name(href="/MUSIC") MUSIC
+					li
+						a.mainMenu_name(href="/SHOP") SHOP
+					li
+						a.mainMenu_name(href="/CONTACT") CONTACT
+
+	block content
