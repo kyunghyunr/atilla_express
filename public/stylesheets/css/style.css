@@ -30,10 +30,9 @@
   color: #ffffff;
   display: flex;
   justify-content: space-between;
-}
-.header nav .mainMunu {
-  display: flex;
-  list-style: none;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 .header nav li {
   padding: 15px;
@@ -54,12 +53,12 @@
   background-color: #00000000;
   transition: 0.3s;
 }
-.openMenu {
-  padding: 19px;
+.hamburger {
+  padding: 30px;
   display: none;
   cursor: pointer;
 }
-.openMenu .bar {
+.hamburger .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -69,29 +68,33 @@
   background-color: white;
 }
 @media (max-width: 970px) {
-  .openMenu {
+  .hamburger {
     display: block;
     float: right;
   }
-  .openMenu.active .bar:nth-child(2) {
+  .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .openMenu.active .bar:nth-child(1) {
+  .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .openMenu.active .bar:nth-child(3) {
-    transform: translateY(8px) rotate(-45deg);
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   .mainMenu {
     position: fixed;
-    left: -100%;
-    top: 70px;
+    right: -100%;
+    top: 102px;
     gap: 0;
     flex-direction: column;
     background-color: #00000000;
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    display: flex;
+  }
+  .mainMenu.active {
+    right: 0;
   }
 }
 .footer {
@@ -119,4 +122,5 @@
 }
 .contact_container h1 {
   color: #ffffff;
+  padding-top: 102px;
 }

@@ -7,28 +7,30 @@ html(class='no-js', lang='en')
 		link(rel='stylesheet', type='text/css', href='/stylesheets/csshake/docs/csshake.css')
 	body
 	Header.header
-		div.openMenu
-			span.bar
-			span.bar
-			span.bar
-		div
+			div
 			nav
 				a.shake-slow#mainLogo_link(href="/")
 					img#mainLogo(src='/images/atilla_logo_white_edit.svg')
+
+				div.hamburger
+					span.bar
+					span.bar
+					span.bar
+
 				ul.mainMenu
-					li
+					li.mainMenu_name
 						div.shake
 							a.mainMenu_name(href="/SHOWS") SHOWS
-					li
+					li.mainMenu_name
 						div.shake
 							a.mainMenu_name(href="/NEWS") NEWS
-					li
+					li.mainMenu_name
 						div.shake
 							a.mainMenu_name(href="/MUSIC") MUSIC
-					li
+					li.mainMenu_name
 						div.shake
 							a.mainMenu_name(href="http://5hop.xyz", target="_blank") SHOP
-					li
+					li.mainMenu_name
 						div.shake
 							a.mainMenu_name(href="/CONTACT") CONTACT
 
@@ -37,7 +39,6 @@ html(class='no-js', lang='en')
 	footer.footer
 		| || 2022 &copy; ATILLAMUSIC All rights reserved ||
 	
-	script
-
+	script(src='/javascripts/te5t.xyz.js')
 
 
