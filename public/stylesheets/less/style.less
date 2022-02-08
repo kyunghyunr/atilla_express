@@ -3,11 +3,11 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	background-color: #000000;
 
 	body {
 		font-family: "Black Han Sans", sans-serif;
 		padding-top: 0;
+		background-image: url(/images/solid_black.svg);
 	}
 }
 
@@ -31,7 +31,7 @@
 		transition: 0.3s;
 	}
 	nav {
-		background: #000000;
+		background: rgba(0, 0, 0, 0.5);
 		color: #ffffff;
 		display: flex;
 		justify-content: space-between;
@@ -47,7 +47,7 @@
 			display: inline-block;
 			text-decoration: none;
 
-			.mainMenu_name {
+			.mainMenu_link {
 				display: inline-block;
 				padding: 15px;
 				text-decoration: none;
@@ -57,7 +57,7 @@
 				font-weight: bolder;
 				transition: 0.3s;
 			}
-			.mainMenu_name:hover {
+			.mainMenu_link:hover {
 				background-color: #00000000;
 				//				text-shadow: 0 0 10px #fff, 0 0 20px #fff;
 				//				font-size: 3rem;
@@ -69,7 +69,8 @@
 
 // hamburgerMenu
 .hamburger {
-	padding: 30px;
+	padding-top: 35px;
+	padding-right: 35px;
 	display: none;
 	cursor: pointer;
 
@@ -108,7 +109,7 @@
 		top: 102px;
 		gap: 0;
 		flex-direction: column;
-		background-color: #00000000;
+		background-color: rgba(0, 0, 0, 0.5);
 		width: 100%;
 		text-align: center;
 		transition: 0.3s;
@@ -117,7 +118,7 @@
 	.mainMenu.active {
 		right: 0;
 	}
-//	.mainMenu_name {
+//	.mainMenu_element {
 //	}
 }
 
@@ -138,7 +139,7 @@
 	#main_picture {
 		width: 500px;
 		height: auto;
-		margin-top: 97px;
+		margin-top: 102px;
 	}
 }
 
@@ -147,7 +148,7 @@
 	text-align: center;
 
 	#we_can_do {
-		margin-top: 97px;
+		margin-top: 102px;
 		justify-content: center;
 	}
 }

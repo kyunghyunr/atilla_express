@@ -2,11 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #000000;
 }
 * body {
   font-family: "Black Han Sans", sans-serif;
   padding-top: 0;
+  background-image: url(/images/solid_black.svg);
 }
 .header {
   position: relative;
@@ -26,7 +26,7 @@
   transition: 0.3s;
 }
 .header nav {
-  background: #000000;
+  background: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -39,7 +39,7 @@
   display: inline-block;
   text-decoration: none;
 }
-.header nav li .mainMenu_name {
+.header nav li .mainMenu_link {
   display: inline-block;
   padding: 15px;
   text-decoration: none;
@@ -49,12 +49,13 @@
   font-weight: bolder;
   transition: 0.3s;
 }
-.header nav li .mainMenu_name:hover {
+.header nav li .mainMenu_link:hover {
   background-color: #00000000;
   transition: 0.3s;
 }
 .hamburger {
-  padding: 30px;
+  padding-top: 35px;
+  padding-right: 35px;
   display: none;
   cursor: pointer;
 }
@@ -87,7 +88,7 @@
     top: 102px;
     gap: 0;
     flex-direction: column;
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -111,13 +112,13 @@
 .main_image_layout_1 #main_picture {
   width: 500px;
   height: auto;
-  margin-top: 97px;
+  margin-top: 102px;
 }
 .music_layout_1 {
   text-align: center;
 }
 .music_layout_1 #we_can_do {
-  margin-top: 97px;
+  margin-top: 102px;
   justify-content: center;
 }
 .contact_container h1 {
