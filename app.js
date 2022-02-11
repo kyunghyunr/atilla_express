@@ -1,15 +1,17 @@
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
+'use strict'; // vanilla js 
 
-var homeRouter = require("./routes/home");
-var musicRouter = require("./routes/music");
-var contactRouter = require("./routes/contact");
+let createError = require("http-errors");
+let express = require("express");
+let path = require("path");
+let cookieParser = require("cookie-parser");
+let logger = require("morgan");
+
+let homeRouter = require("./routes/home");
+let musicRouter = require("./routes/music");
+let contactRouter = require("./routes/contact");
 // var usersRouter = require("./routes/users");
 
-var app = express();
+let app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

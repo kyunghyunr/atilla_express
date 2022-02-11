@@ -1,3 +1,5 @@
+'use strict'; // vanilla js
+
 // hamburgerMenu
 const hamburger = document.querySelector(".hamburger");
 const mainMenu = document.querySelector(".mainMenu");
