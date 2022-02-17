@@ -3,10 +3,14 @@ html(class='no-js', lang='en')
 	head
 		title= title
 		meta(character='etf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=0, viewport-fit=cover')
 		link(rel='stylesheet', href='/stylesheets/css/style.css')
 		link(rel='stylesheet', type='text/css', href='/stylesheets/csshake/docs/csshake.css')
-		script(defer, src='/javascripts/te5t.xyz.js')
-	body
+		script(defer, charset='UTF-8' ,src='/javascripts/te5t.xyz.js')
+		script(defer, charset='UTF-8' ,src='/javascripts/matrix.js')
+	body#contentContainer
+		canvas#canvas1
 		Header.header
 				div
 				nav

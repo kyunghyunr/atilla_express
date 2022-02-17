@@ -1,0 +1,41 @@
+// media query
+@media (max-width:971px) {
+	.hamburger {
+		display: block;
+		float: right;
+	}
+	.hamburger.active {
+		.bar:nth-child(2) {
+			opacity: 0;
+		}
+		.bar:nth-child(1) {
+			transform: translateY(12px) rotate(45deg);
+		}
+		.bar:nth-child(3) {
+			transform: translateY(-12px) rotate(-45deg);
+		}
+	}
+	.mainMenu {
+		display: none;
+	}
+	.mainMenu.active {
+		position: fixed;
+		top: 102px;
+		gap: 0;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0.6);
+		width: 100%;
+		height: 100%;
+		font-size: 3rem;
+		text-align: center;
+		display: flex;
+		animation: fadein 0.3s;
+		-moz-animation: fadein 0.3s; /* Firefox */
+		-webkit-animation: fadein 0.3s; /* Safari and Chrome */
+		-o-animation: fadein 0.3s; /* Opera */
+		animation-fill-mode: forwards;
+	}
+//	.mainMenu_element {
+//	}
+}
+
