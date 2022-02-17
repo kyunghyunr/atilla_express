@@ -15,4 +15,16 @@ document.querySelectorAll(".mainMenu_link").forEach(n => n.addEventListener("cli
 	mainMenu.classList.remove("active");	
 	}));
 
-// mobile landscape mode hamburgerMenu delete
+// if mobile client change css to mobile_style.scss
+
+let filter = "win16|win32|win64|mac|macintel";
+let css = document.getElementById("css");
+
+if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+//	console.log("Client platform : Mobile");
+	css.href = "/stylesheets/css/mobile_style.css"
+} else {
+//	console.log("Client platform : PC");
+	css.href = "/stylesheets/css/style.css";
+}
+

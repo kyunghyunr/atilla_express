@@ -48,7 +48,6 @@ class Effect {
 		this.columns = this.canvasWidth/this.fontSize;
 		this.symbols = [];
 		this.initialize();
-		console.log(this.symbols);
 	}
 	initialize() {
 		for (let i = 0; i < this.columns; i++) {
