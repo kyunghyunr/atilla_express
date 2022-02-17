@@ -1,5 +1,7 @@
 // css fadein
 @import './scss_modules/css_fadein.scss';
+// css fadeout
+@import './scss_modules/css_fadeout.scss';
 
 // Main_Layout
 * {
@@ -64,7 +66,8 @@ canvas {
 
 			.mainMenu_link {
 				display: inine-block;
-				padding: 15px;
+				padding-left: 15px;
+				padding-right: 15px;
 				text-decoration: none;
 				text-transform: uppercase;
 				color: #ffffff;

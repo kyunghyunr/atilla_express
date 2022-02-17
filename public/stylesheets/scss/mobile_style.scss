@@ -1,5 +1,7 @@
 // css fadein
 @import './scss_modules/css_fadein.scss';
+// css fadeout
+@import './scss_modules/css_fadeout.scss';
 
 // Main_Layout
 * {
@@ -64,7 +66,8 @@ canvas {
 
 			.mainMenu_link {
 				display: inine-block;
-				padding: 15px;
+				padding-left: 15px;
+				padding-right: 15px;
 				text-decoration: none;
 				text-transform: uppercase;
 				color: #ffffff;
@@ -100,49 +103,8 @@ canvas {
 
 }
 
-@media (orientation: portrait) {
-	.hamburger {
-		display: block;
-		float: right;
-	}
-	.hamburger.active {
-		.bar:nth-child(2) {
-			opacity: 0;
-		}
-		.bar:nth-child(1) {
-			transform: translateY(12px) rotate(45deg);
-		}
-		.bar:nth-child(3) {
-			transform: translateY(-12px) rotate(-45deg);
-		}
-	}
-	.mainMenu {
-		display: none;
-	}
-	.mainMenu.active {
-		position: fixed;
-		top: 102px;
-		gap: 0;
-		flex-direction: column;
-		background-color: rgba(0, 0, 0, 0.6);
-		width: 100%;
-		height: 100%;
-		font-size: 3rem;
-		align-items: center;
-		display: flex;
-		animation: fadein 0.3s;
-		-moz-animation: fadein 0.3s; /* Firefox */
-		-webkit-animation: fadein 0.3s; /* Safari and Chrome */
-		-o-animation: fadein 0.3s; /* Opera */
-		animation-fill-mode: forwards;
-	}
-//	.mainMenu_element {
-//	}
-}
-
-
 // media query
-//@import './scss_modules/media_query.scss';
+@import './scss_modules/media_query.scss';
 // footer
 @import './scss_modules/footer.scss';
 // HOME-article
