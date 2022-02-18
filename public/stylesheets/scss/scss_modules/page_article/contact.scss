@@ -1,11 +1,42 @@
 .contact_container {
-	#contact-h1 {
-		text-align: center;
-		font-size: 3rem;
-		color: #ffffff;
-		padding-top: 102px;
-	}
+	position: relative;
+	left: 21%;
+	width: 60%;
+	min-height: 80vh;
+
 	#contact-form {
-		text-align: center;
+		position: relative;
+		padding-top: 122px;
+		left: 10%;
+		width: 81%;
+
+		#contact-h2 {
+			color: #ffffff;
+			font-size: 2rem;
+		}
+		
+		input, textarea {
+			font-size: 1rem;
+			color: #ffffff;
+			width: 100%;
+			margin-top: 2rem;
+			border: none;
+			border-bottom: 1px solid #ffffff;
+			background-color: rgba(0, 0, 0, 0);
+		}
+		
+		.submit {
+			font-size: 1rem;
+			border: 1px solid #ffffff;
+			padding: 1rem;
+			text-align: center;
+			background-color: rgba(0, 0, 0, 0);
+			cursor: pointer;
+		}
+		.submit:hover {
+			opacity: 0.6;
+
+		}
+
 	}
 }

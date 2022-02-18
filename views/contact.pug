@@ -2,16 +2,16 @@ extends layout
 
 block content
 	div.contact_container
-		h1#contact-h1 CONTACT US
 		form#contact-form(method="POST", action="send", enctype="multipart/form-data")
 			p
-				input#name(type="text", name="Name", maxlength="20", placeholder="Name")
+				h2#contact-h2 CONTACT
+				input#name(type="text", name="Name", maxlength="20", placeholder="Name", size="30")
 				br
-				input#email(type="email", name="Email", placeholder="Email")
+				input#email(type="email", name="Email", placeholder="Email", size="30")
 				br
-				input#subject(type="text", name="Subject, maxlength", placeholder="Subject")
+				input#subject(type="text", name="Subject, maxlength", placeholder="Subject", size="30")
 				br
-				input#message(type="text", name="Message", placeholder="Message")
+				textarea#message(placeholder="Message", cols="30", rows="10")
 				br
-				input(type="submit", value="submit")
+				input.submit(type="submit", value="Send Message")
 				br
