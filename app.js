@@ -33,7 +33,7 @@ app.post('/', (req, res) => {
 	console.log(req.body);
 
 	const transporter = nodemailer.createTransport({
-		service : 'smtp.mailtrap.io',
+		host : 'smtp.mailtrap.io',
 		port : 587,
 		secure: false, 
 		auth: {
