@@ -1,10 +1,10 @@
 const nodemailer = require('nodemailer');
 const email = {
-	host: "smtp.mailtrap.io",
+	host: "smtp.gmail.com",
 	port: 587,
 	auth: {
-		user: "37b0992d4efe08",
-		pass: "667ab3a1f470cc"
+		user: "music.atilla@gmail.com",
+		pass: "pfzlipdndkzhgsru"
 	}
 };
 
@@ -20,10 +20,10 @@ const send = async (option) => {
 };
 
 let email_data = {
-	from: 'kyunghyunr@gmail.com',
-	to : 'kyunghyunr@gmail.com',
-	subject: '테스트이메일',
-	text: 'nodemailer 테스트'
+	from: 'te5t@te5t.xyz',
+	to : 'music.atilla@gmail.com',
+	subject: 'te5t@te5t.xyz is running',
+	text: 'te5t@te5t.xyz is running'
 }
 
 send(email_data);
